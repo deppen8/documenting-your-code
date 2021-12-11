@@ -8,7 +8,7 @@ The repo does _not_ contain all of the material from the tutorial. The tutorial 
 
 Learners will need a GitHub.com account and should be familiar with some foundational `git` workflow tasks: cloning a repo, making a branch, pushing to a remote repository.
 
-Participants should also be comfortable with any tool for creating and using virtual environments (`venv`, `conda`, etc.).
+Participants should also be comfortable with a virtual environment tool of their choice (`venv`, `conda`, etc.).
 
 ## Getting started
 
@@ -41,4 +41,4 @@ Now that we have our virtual environment, we can install our demo package, `rand
 python3 -m pip install -e .
 ```
 
-This will ensure that any changes we make to the demo package will be automtically available to us in our virtual environment without reinstalling the `randomly` package.
+This will ensure that any changes we make to the demo package will be automatically available to us in our virtual environment without reinstalling the `randomly` package.
