@@ -14,7 +14,7 @@ def generate_poisson_points(
     bounds : Tuple[float, float, float, float]
         ``(minx, miny, maxx, maxy)`` of the bounding box
     rate : float
-        Theoretical events per unit area across the whole space. See Notes for more details.
+        Theoretical events per unit area across the whole space.
 
     Returns
     -------
