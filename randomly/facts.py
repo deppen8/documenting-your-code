@@ -12,7 +12,7 @@ def generate_random_fact(output_format: str, language: str) -> Union[str, Dict]:
     output_format : {"html", "json", "txt", "md"}
         Desired format for the returned fact.
     language : {"en", "de"}
-        Desired language for the fact. English and German supported.
+        Desired language for the fact. "en" (English) and "de" (German) supported.
 
     Returns
     -------
