@@ -14,10 +14,14 @@ Participants should also be comfortable with a virtual environment tool of their
 
 These steps should get you ready for the tutorial. Ideally all of these steps would be complete before the tutorial starts.
 
-### Get this repo locally
+### Fork the repository
+
+You should fork this repository to your GitHub account using the "Fork" icon in the top right of the page. ([Access more information about forking a repository.](https://docs.github.com/en/get-started/quickstart/fork-a-repo))
+
+### Get your new repo locally
 
 ```bash
-git clone git@github.com:deppen8/documenting-your-code.git
+git clone git@github.com:<your-username-here>/documenting-your-code.git
 cd documenting-your-code/
 ```
 
@@ -25,13 +29,21 @@ cd documenting-your-code/
 
 ### Get Python 3.9 and create a virtual environment
 
+:warning: A virtual environment is not _strictly_ required for this tutorial, but it is strongly recommended.
+
+If you are not familiar with virtual environments and want to be, I recommend `conda` as a good starting place. The [Introduction to Conda for (Data) Scientists](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists) lesson from The Carpentries is a good resource. Start with the [Setup instructions](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/setup/), then move on to the Episodes.
+
 This tutorial assumes we are working with Python version 3.9. We also want to create a virtual environment where we can safely install dependencies.
 
 Depending on which virtual environment tool you use, you might install Python 3.9 separately or you may do it as part of the virtual environment creation.
 
-In any case, you can use the `requirements.txt` in the repo to install all of the tools you will need.
-
 **Be sure to activate your new virtual environment!**
+
+After you have an environment, you can use the `requirements.txt` in the repo to install all of the tools you will need.
+
+```bash
+python3 -m pip install -r requirements.txt
+```
 
 ### Install `randomly` in developer mode
 
