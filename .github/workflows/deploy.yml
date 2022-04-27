@@ -1,16 +1,10 @@
 name: deploy-book
 
-# Only run this when the main branch changes
+# Only run this when the specified branch changes
 on:
   push:
     branches:
-      - main
-    # If your git repository has the Jupyter Book within some-subfolder next to
-    # unrelated files, you can make this run only if a file within that specific
-    # folder has been modified.
-    #
-    # paths:
-    #   - docs/**
+      - level-03
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
@@ -39,4 +33,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3.6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_build/html
+          publish_dir: docs/_build/html
