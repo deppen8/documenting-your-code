@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The points module &#8212; Documenting your code</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="randomly.facts" href="../api/facts.html" />
+    <link rel="prev" title="Installation" href="install.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Documenting your code</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Home
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Guides
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="install.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   The
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     points
+    </span>
+   </code>
+   module
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  API Reference
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/facts.html">
+   randomly.facts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/palette.html">
+   randomly.palette
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/password.html">
+   randomly.password
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/points.html">
+   randomly.points
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/guides/points.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/deppen8/documenting-your-code/main?urlpath=tree/docs/guides/points.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#poisson-points">
+   Poisson points
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>The points module</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#poisson-points">
+   Poisson points
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="the-points-module">
+<h1>The <code class="docutils literal notranslate"><span class="pre">points</span></code> module<a class="headerlink" href="#the-points-module" title="Permalink to this headline">¶</a></h1>
+<p>This notebook demonstrates how to use the <code class="docutils literal notranslate"><span class="pre">randomly.points</span></code> module.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This assumes you have already <a class="reference internal" href="install.html"><span class="doc std std-doc">installed the <code class="docutils literal notranslate"><span class="pre">randomly</span></code> package</span></a>.</p>
+</div>
+<div class="section" id="poisson-points">
+<h2>Poisson points<a class="headerlink" href="#poisson-points" title="Permalink to this headline">¶</a></h2>
+<p>Currently, the module only contains a single function, <code class="docutils literal notranslate"><span class="pre">generate_poisson_points()</span></code>. This function will generate random points in a defined rectangular space.</p>
+<p>The function accepts two parameters:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">bounds</span></code>: a tuple <code class="docutils literal notranslate"><span class="pre">(minx,</span> <span class="pre">miny,</span> <span class="pre">maxx,</span> <span class="pre">maxy)</span></code> of the bounding box.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rate</span></code>: theoretical events per unit area</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">randomly.points</span> <span class="kn">import</span> <span class="n">generate_poisson_points</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="nn">Input In [1],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">randomly.points</span> <span class="kn">import</span> <span class="n">generate_poisson_points</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;randomly&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s generate random points within a 100 x 100 square with origin at (0, 0) at a rate of 0.01 (1%).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">points</span> <span class="o">=</span> <span class="n">generate_poisson_points</span><span class="p">(</span><span class="n">bounds</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">rate</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>With an area of 10,000 square units, we would expect about 100 points. If we look at the shape of the output array, we should see somewhere around 100 points represented.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">points</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(96, 2)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Our <code class="docutils literal notranslate"><span class="pre">points</span></code> variable is a set of X-Y coordinate pairs.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">points</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 1.62918989, 83.59531928],
+       [52.36500554, 58.67577925],
+       [48.596886  , 91.35023164],
+       [55.35892759, 95.95828836],
+       [32.35550876, 54.36340863],
+       [98.37564203, 84.2794221 ],
+       [97.60766917, 71.43815447],
+       [98.28743969, 51.19720261],
+       [65.37004676, 10.11668841],
+       [48.2290034 , 94.61970909],
+       [43.45679031, 76.2195405 ],
+       [63.37514711, 45.35074923],
+       [86.58619917, 61.38050914],
+       [93.90290689, 28.59498862],
+       [32.62724486, 91.2304551 ],
+       [43.17923481, 32.42833906],
+       [67.7103018 , 66.59218316],
+       [22.15373116,  9.87925479],
+       [60.41406537, 86.35205139],
+       [ 1.98832508, 73.99240501],
+       [87.88856977, 88.10070991],
+       [19.22757528,  2.20276541],
+       [36.38855157, 45.50096503],
+       [68.41768063, 32.02082135],
+       [82.85386962, 45.55818199],
+       [52.4773011 , 31.96550507],
+       [38.78519273,  3.45618394],
+       [99.63606637, 28.9278186 ],
+       [75.66263912, 91.84579507],
+       [40.67798287, 55.73981414],
+       [65.98244734,  1.63771352],
+       [18.09642834, 72.49606405],
+       [18.74040063, 90.442535  ],
+       [27.80215489, 17.93471962],
+       [73.39344998, 99.99394134],
+       [19.07301635, 97.76280159],
+       [55.24747246, 28.14779952],
+       [67.35662929, 52.91946192],
+       [97.29296796, 55.65460009],
+       [58.59521028, 89.09099561],
+       [23.59139686, 72.22926003],
+       [77.49755826,  7.55048465],
+       [94.93625126, 16.79418914],
+       [91.44858464, 99.38793851],
+       [42.1805312 , 35.30600729],
+       [81.54571925, 39.16736193],
+       [31.21754128, 16.09457061],
+       [58.05463176, 84.03472288],
+       [50.75495167, 35.5593201 ],
+       [20.09785555, 74.30513505],
+       [ 0.93024305, 81.61575619],
+       [13.96635411, 42.55082063],
+       [60.22801893, 34.69739371],
+       [17.22055152, 37.58837538],
+       [25.5852376 , 62.61888201],
+       [88.00515064, 71.3494478 ],
+       [97.52937086, 96.93503355],
+       [71.82039881, 79.98044409],
+       [85.79720392, 78.68937159],
+       [95.17491299, 40.86368669],
+       [39.85819971,  0.5934776 ],
+       [39.50999404, 83.50848304],
+       [ 0.44115882, 51.50450662],
+       [ 2.8039469 ,  0.19678338],
+       [29.38824549, 91.22171241],
+       [37.83451124, 50.30971393],
+       [95.4044672 , 87.95224799],
+       [11.61325165,  8.81842045],
+       [93.75122993, 42.3962633 ],
+       [22.68110031, 72.1493441 ],
+       [43.88770548, 58.04822881],
+       [80.40321265, 58.60045847],
+       [73.02239623, 59.23850123],
+       [20.97844794, 21.71471576],
+       [60.5799645 , 46.75048858],
+       [29.08282936,  9.46836416],
+       [38.46837355, 46.78763897],
+       [48.33394249,  3.54452383],
+       [94.61166544, 82.93101787],
+       [58.35154033, 96.42670955],
+       [96.50082515, 63.05182245],
+       [67.5154125 , 84.46314936],
+       [61.26200394, 40.52973458],
+       [51.97595026, 10.63062726],
+       [90.57216297, 10.71432888],
+       [22.54856288, 91.71314233],
+       [62.14754205, 14.13342749],
+       [98.50548348, 93.02977115],
+       [31.94929236, 22.75216635],
+       [60.8919213 , 71.30804197],
+       [77.61116843, 55.56855077],
+       [ 0.64491332, 16.15938436],
+       [54.28102138, 76.87575196],
+       [48.7531679 , 60.8764084 ],
+       [96.73273159, 15.7497866 ],
+       [76.41170118,  8.94606267]])
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./guides"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="install.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Installation</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../api/facts.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">randomly.facts</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Jacob Deppen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
