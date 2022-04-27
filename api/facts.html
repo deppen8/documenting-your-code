@@ -227,8 +227,36 @@
             
               <div>
                 
-  <div class="section" id="randomly-facts">
-<h1>randomly.facts<a class="headerlink" href="#randomly-facts" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-randomly.facts">
+<span id="randomly-facts"></span><h1>randomly.facts<a class="headerlink" href="#module-randomly.facts" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="randomly.facts.generate_random_fact">
+<span class="sig-prename descclassname"><span class="pre">randomly.facts.</span></span><span class="sig-name descname"><span class="pre">generate_random_fact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_format</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/randomly/facts.html#generate_random_fact"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#randomly.facts.generate_random_fact" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch a random fact from the Useless Facts API</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_format</strong> (<em>{&quot;html&quot;</em><em>, </em><em>&quot;json&quot;</em><em>, </em><em>&quot;txt&quot;</em><em>, </em><em>&quot;md&quot;}</em>) – Desired format for the returned fact.</p></li>
+<li><p><strong>language</strong> (<em>{&quot;en&quot;</em><em>, </em><em>&quot;de&quot;}</em>) – Desired language for the fact. “en” (English) and “de” (German) supported.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>fact</strong> – The result of the query. If <code class="docutils literal notranslate"><span class="pre">output_format==&quot;json&quot;</span></code>, it returns a dictionary.
+Otherwise, a string is returned.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Union[str, Dict]</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – When <code class="docutils literal notranslate"><span class="pre">language</span></code> is not one of <code class="docutils literal notranslate"><span class="pre">{&quot;en&quot;,</span> <span class="pre">&quot;de&quot;}</span></code>.</p></li>
+<li><p><strong>ValueError</strong> – When <code class="docutils literal notranslate"><span class="pre">output_format</span></code> not one of <code class="docutils literal notranslate"><span class="pre">{&quot;html&quot;,</span> <span class="pre">&quot;json&quot;,</span> <span class="pre">&quot;txt&quot;,</span> <span class="pre">&quot;md&quot;}</span></code>.</p></li>
+<li><p><strong>RequestException</strong> – When the request response is anything other than a 200 (success).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
 
     <script type="text/x-thebe-config">

@@ -227,8 +227,29 @@
             
               <div>
                 
-  <div class="section" id="randomly-palette">
-<h1>randomly.palette<a class="headerlink" href="#randomly-palette" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-randomly.palette">
+<span id="randomly-palette"></span><h1>randomly.palette<a class="headerlink" href="#module-randomly.palette" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="randomly.palette.plot_palette">
+<span class="sig-prename descclassname"><span class="pre">randomly.palette.</span></span><span class="sig-name descname"><span class="pre">plot_palette</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">matplotlib.figure.Figure</span></span></span><a class="reference internal" href="../_modules/randomly/palette.html#plot_palette"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#randomly.palette.plot_palette" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display five color swatches side-by-side.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>model</strong> (<em>{&quot;default&quot;</em><em>, </em><em>&quot;ui&quot;}</em>) – Color set to use. <code class="docutils literal notranslate"><span class="pre">&quot;default&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;ui&quot;</span></code> are always available. Other color sets rotate.
+See <a class="reference external" href="http://colormind.io/list/">colormind.io/list</a> for current options.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A plot of the complete 1 x 5 sequence of color patches.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Figure</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – When <code class="docutils literal notranslate"><span class="pre">model</span></code> is not one of <code class="docutils literal notranslate"><span class="pre">{&quot;default&quot;,</span> <span class="pre">&quot;ui&quot;}</span></code>.</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
 
     <script type="text/x-thebe-config">
