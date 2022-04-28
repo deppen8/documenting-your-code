@@ -12,3 +12,6 @@ requests==2.26.0
 rope==0.22.0
 scipy==1.7.3
 types-requests==2.26.1
+pydocstyle==6.1.1
+interrogate==1.5.0
+xdoctest==1.0.0
