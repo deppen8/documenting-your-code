@@ -35,3 +35,4 @@ def generate_poisson_points(
     ys = uniform.rvs(0, dy, ((N, 1))) + bounds[1]
 
     return np.hstack((xs, ys))
+
