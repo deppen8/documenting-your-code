@@ -1,8 +1,9 @@
+from typing import Literal
 import requests
 from requests.exceptions import RequestException
+from typing import Literal
 
-
-def generate_random_fact(output_format, language):
+def generate_random_fact(output_format, language: Literal["en", "de"]):
     if language not in {"en", "de"}:
         raise ValueError(f"{language} is not supported.")
 

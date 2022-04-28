@@ -1,8 +1,10 @@
 import random
 import string
+from typing import Optional, Iterable
 
-
-def generate_password(chars, punctuation, invalid_chars=None):
+def generate_password(chars:int, punctuation:bool, 
+    invalid_chars:Optional[Iterable]=None
+) -> str:
     valid_chars = string.ascii_letters + string.digits
 
     if punctuation:
