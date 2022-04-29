@@ -3,6 +3,17 @@ import requests
 
 
 def plot_palette(model):
+    """_summary_
+
+    Args:
+        model (_type_): _description_
+
+    Raises:
+        ValueError: _description_
+
+    Returns:
+        _type_: _description_
+    """
     if model not in {"default", "ui"}:
         raise ValueError(f"{model} is not supported.")
 
